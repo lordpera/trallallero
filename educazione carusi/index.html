@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stileindex.css">
+</head>
+
+
+<body>
+	<h1>Educazione civica</h1>
+	
+	<form>
+		<div class="bottoni">
+			<input type="text" readonly id="clock">
+			<fieldset>
+			<legend>Dati personali</legend>
+				<input type="text" placeholder="inserisci nome" required>
+				<input type="text" placeholder="inserisci cognome" required>
+				<input type="date" required>
+				<u>Continuando, accetti le <a href="condizioni.pdf">condizioni d'uso</a></u>
+
+			</fieldset>
+		</div>
+	</form>
+	
+
+</body>
+
+	<script>
+	
+	setInterval(()=>{
+	let ora=new Date();
+	
+	let ore = ora.getHours();     
+	let minuti = ora.getMinutes();
+	let secondi = ora.getSeconds(); 
+	let data=`Orario: ${ore}:${minuti}:${secondi}`;
+	
+	let orologio=document.getElementById("clock");
+	orologio.value=data;
+	},1000);
+
+	</script>
+
+</html>
