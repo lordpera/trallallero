@@ -1,41 +1,70 @@
 * {
-	font-family:calibri;
+    font-family:calibri;
 }
 a{
-	color:gray;
+    color:gray;
 }
 u{
-	color:gray;
+    color:gray;
 }
 
 body {
-	display:flex;
-	justify-content: center;
-	align-items:center;
-	flex-direction: column;
-	background-color: bisque;
-	
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-color: bisque;
+    
 }
 form{
-	border: 2px solid;
-	border-radius: 40px;
-	width:25rem;
-	background-color: white;
-	box-shadow: 4px 5px rgba(0, 0, 0, 0.25);
+    border: 2px solid;
+    border-radius: 40px;
+    width:25rem;
+    background-color: white;
+    box-shadow: 4px 5px rgba(0, 0, 0, 0.25);
+}
+input{
+
+border-radius: 5px;
+width: 15rem;
+height: 2rem;
+
+
 }
 .bottoni {
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
-	gap:2rem;
-	
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:2rem;
+    
+    
+    
 }
 fieldset{
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
-	gap:2rem;
-	
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:2rem;
 }
+
+.pulsante{
+    display:flex;
+    background-color: darkred;
+    border-radius: 30px;
+    border: 2 px black;
+    color: azure;
+}
+
+.orologio{
+    display:flex;
+    padding: 10px;
+    background-color: darkred;
+    border: 2 px black;
+    color: azure;
+    justify-content: center;
+    align-items:center;
+
+}
+
