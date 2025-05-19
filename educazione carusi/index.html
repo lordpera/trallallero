@@ -8,17 +8,16 @@
 <body>
     <h1>Educazione civica</h1>
     
-    <form>
+    <form id="form">
         <div class="bottoni">
             <input type="text" class="orologio" readonly id="clock">
             <fieldset>
             <legend>Dati personali</legend>
-                <input type="text" placeholder="Inserisci nome" required>
-                <input type="text" placeholder="Inserisci cognome" required>
-                <input type="date" required>
+                <input type="text" placeholder="Inserisci nome" required id="nome">
+                <input type="text" placeholder="Inserisci cognome" required id="cognome">
                 <u>Continuando, accetti le <a href="condizioni.pdf">condizioni d'uso</a></u>
 
-                <button class="pulsante">CONTINUA</button>
+                <input type="button" class="pulsante" value="CONTINUA" id="bott">
 
             </fieldset>
         </div>
@@ -40,6 +39,19 @@
     let orologio=document.getElementById("clock");
     orologio.value=data;
     },1000);
+	
+document.getElementById("bott").addEventListener("click", (e) => {
+        const nome = document.getElementById("nome").value.trim();
+        const cognome = document.getElementById("cognome").value.trim();
+
+        if (nome === "" || cognome === "") {
+            alert("Per continuare devi inserire sia il nome che il cognome.");
+			e.preventDefault();
+        } else {
+            
+            window.location.href = "presentazione.pdf";
+        }
+    });
 
     </script>
 
